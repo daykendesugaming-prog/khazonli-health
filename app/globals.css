@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  /* Los colores exactos de tu v0 adaptados a v4 */
+  --color-background: hsl(222 47% 11%);
+  --color-foreground: hsl(210 40% 98%);
+  
+  --color-card: hsl(222 47% 14%);
+  --color-card-foreground: hsl(210 40% 98%);
+  
+  --color-primary: hsl(174 62% 47%); /* El Turquesa brillante */
+  --color-primary-foreground: hsl(222 47% 11%);
+  
+  --color-secondary: hsl(217 33% 17%);
+  --color-secondary-foreground: hsl(210 40% 98%);
+  
+  --color-accent: hsl(174 62% 47%);
+  --color-accent-foreground: hsl(222 47% 11%);
+  
+  --color-border: hsl(217 33% 22%);
+  --color-input: hsl(217 33% 22%);
+  --color-ring: hsl(174 62% 47%);
+
+  --radius-lg: 0.75rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
